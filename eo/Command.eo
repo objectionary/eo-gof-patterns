@@ -1,0 +1,51 @@
++package sandbox
++alias stdout org.eolang.io.stdout
++alias sprintf org.eolang.txt.sprintf
+
+[nextHandler] > defaultHandler
+  [message] > process
+    "" > @
+
+[] > handler1
+  [message] > process
+    if. > @
+      message.eq "1"
+      "one"
+      ^.nextHandler.process message
+  defaultHandler > @
+    handler2
+
+[] > handler2
+  [message] > process
+    if. > @
+      message.eq "2"
+      "two"
+      ^.nextHandler.process message
+  defaultHandler > @
+    handler3
+
+[] > handler3
+  [message] > process
+    if. > @
+      message.eq "3"
+      "three"
+      ^.nextHandler.process message
+  defaultHandler > @
+    handler4
+
+[] > handler4
+  [message] > process
+    if. > @
+      message.eq "4"
+      "four"
+      ^.nextHandler.process message
+  defaultHandler > @
+    defaultHandler
+
+[args...] > appChain
+  handler1 > hChain
+  stdout > @
+    sprintf
+      "%s\n"
+      hChain.process
+        args.get 0
