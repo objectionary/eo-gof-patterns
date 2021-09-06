@@ -1,0 +1,12 @@
++package sandbox
++alias stdout org.eolang.io.stdout
+
+[] > null
+  "null" > @
+
+[args...] > appNull
+  stdout > @
+    if.
+      args.isEmpty
+      null
+      args.get 0

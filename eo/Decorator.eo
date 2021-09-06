@@ -1,0 +1,17 @@
++package sandbox
++alias stdout org.eolang.io.stdout
+
+[] > carsDecorate
+  8 > @
+
+[num] > someCars
+   decorateWithMoreCars num > @
+
+   [number] > decorateWithMoreCars
+     add. > @
+       carsDecorate
+       number
+
+[args...] > appDecorator
+  stdout > @
+    someCars (args.get 0)
