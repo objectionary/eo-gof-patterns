@@ -10,7 +10,7 @@
 
 [receiver] > decCommand
   [] > execute
-    add. > @
+    sub. > @
       ^.receiver
       1
 
