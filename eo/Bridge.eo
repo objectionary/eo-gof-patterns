@@ -1,0 +1,30 @@
++package sandbox
++alias stdout org.eolang.io.stdout
++alias sprintf org.eolang.txt.sprintf
+
+[] > double
+  [a] > execute
+    add. > @
+      a
+      a
+
+[a b] > perimeter
+  double > doubleImpl
+  [] > calculate
+    add. > @
+      ^.doubleImpl.execute
+        ^.a
+      ^.doubleImpl.execute
+        ^.b
+
+[args...] > appBridge
+  stdout > @
+    sprintf
+      "%d"
+      calculate.
+        perimeter
+          toInt.
+            args.get 0
+          toInt.
+            args.get 1
+

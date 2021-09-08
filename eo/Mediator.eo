@@ -1,0 +1,5 @@
++package sandbox
+
+[coll1 coll2] > mediator
+  [] > function1
+  [] > function2
