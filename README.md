@@ -1,4 +1,4 @@
-# EoDesignPatterns
+# Eo Design Patterns
 
 ## What this repository is for?
 
