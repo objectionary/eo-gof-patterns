@@ -1,0 +1,51 @@
+[] > builder
+  subbuilder triangle > @
+  [triangleEntity] > subbuilder
+    # finilizes the construction process
+    [] > finilize
+      ^.^.subbuilder > @
+    # configures the a free attribute
+    [aVal] > setA
+      ^.^.subbuilder > @
+        ^.^.triangleEntity
+          (^.validateSide aVal):a
+    # configures the b free attribute
+    [bVal] > setb
+      ^.^.subbuilder > @
+        ^.^.triangleEntity
+          (^.validateSide bVal):b
+    # configures the c free attribute
+    [cVal] > setc
+      ^.^.subbuilder > @
+        ^.^.triangleEntity
+          (^.validateSide cVal):c
+    # configures the name free attribute
+    [nameVal] > setname
+      ^.^.subbuilder > @
+        ^.^.triangleEntity
+          (^.validateName nameVal):name
+    # validates side value
+    [val] > validateSide
+      if. > @
+        val.greater 0
+        val
+        error
+          "The side of a triangle must not be less than 1!"
+    # validates name
+    [val] > validateName
+      if. > @
+        val.length.neq 0
+        val
+        error
+          "The name of a triangle must not be empty!"
+
+[args...] > app
+  builder > b
+  finilize. > triangleABC
+    setC.
+      setB.
+        setA.
+          builder
+          10
+        12
+      0

@@ -1,0 +1,12 @@
+[] > counter
+  memory 0 > privateCounter
+  [val] > changeBy
+    privateCounter.write > @
+      privateCounter.add val
+  [] > @
+    [] > increment
+      ^.^.changeBy 1 > @
+    [] > decrement
+      ^.^.changeBy (-1) > @
+    [] > value
+      ^.^.privateCounter > @

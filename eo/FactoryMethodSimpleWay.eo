@@ -1,0 +1,26 @@
+[] > creator
+  # left to be redefined
+  [] > createObject
+  # operation over products
+  [] > performOperation
+    createObject.getWeight.add 1 > @
+
+[] > concreteCreatorA
+  creator > @
+  [] > createObject
+    productA > @
+
+[] > concreteCreatorB
+  creator > @
+  [] > createObject
+    productB > @
+
+[] > productA
+  # let's suppose that this implementation gets value from the production server
+  [] > getWeight
+    42 > @
+
+[] > productB
+  # let's suppose that this implementation gets value from the testing server
+  [] > getWeight
+    24 > @

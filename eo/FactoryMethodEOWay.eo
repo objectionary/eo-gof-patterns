@@ -1,0 +1,23 @@
+[@] > creator
+  # operation over products
+  [] > performOperation
+    createObject.getWeight.add 1 > @
+
+[] > productA
+  # let's suppose that this implementation gets value from the production server
+  [] > getWeight
+    42 > @
+
+[] > productB
+  # let's suppose that this implementation gets value from the testing server
+  [] > getWeight
+    24 > @
+
+[args...] > app
+  creator > creatorObject
+    []
+      [] > createObject
+        if. > @
+          (args.get 0).eq "test"
+          productB
+          productA
