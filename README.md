@@ -1,8 +1,8 @@
 # Eo Design Patterns
 
-## What this repository is for?
-
-This repository contains description and EO implementation of 14 programming design patterns.
+## Goal and Motivation
+To analyse design patterns by implementing some popular design patterns in EO. This is to help better assess the EO programming language and suggest alternatives of design patterns in EO that could replace such patterns which are not supported in the language.
+This repository contains descriptions and EO implementation of some popular software design patterns.
 
 ## Implemented patterns
 The description with pattern analyzes is presnted [here](https://github.com/HSE-Eolang/eodesignpatterns/blob/main/EO%20Design%20patterns.pdf).
