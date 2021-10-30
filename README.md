@@ -9,7 +9,7 @@ This repository contains descriptions and EO implementation of some popular soft
 ## Implemented patterns
 Description of the design patterns analysis is available [here](https://github.com/HSE-Eolang/eodesignpatterns/tree/main/tex).
 The following design patterns are implemented:
-- [Abstract Fabric](https://github.com/HSE-Eolang/eodesignpatterns/blob/main/eo/AbstractFabric.eo)
+- [Abstract Factory](https://github.com/HSE-Eolang/eodesignpatterns/blob/main/eo/AbstractFabric.eo)
 - [Adapter](https://github.com/HSE-Eolang/eodesignpatterns/blob/main/eo/Adapter.eo)
 - [Bridge](https://github.com/HSE-Eolang/eodesignpatterns/blob/main/eo/Bridge.eo)
 - [ChainOfResponsibility](https://github.com/HSE-Eolang/eodesignpatterns/blob/main/eo/ChainOfResponsibility.eo)
