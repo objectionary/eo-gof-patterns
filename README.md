@@ -23,7 +23,11 @@ You can include these patterns in the eo compiler sandbox folder and run with th
 
 NB: You will need to have the HSE eo compiler installed (built and installed on your computer).
 
+Step 1:
+
 _mvn compile_
+
+Step 2:
 
 For linux systems:
 
