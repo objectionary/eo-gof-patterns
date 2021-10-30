@@ -7,7 +7,7 @@ To analyse design patterns by implementing some popular design patterns in EO. T
 This repository contains descriptions and EO implementation of some popular software design patterns.
 
 ## Implemented patterns
-Description of the design patterns analysis is available [here](https://github.com/HSE-Eolang/eodesignpatterns/tree/main/paper).
+Description of the design patterns analysis is available [here](https://github.com/HSE-Eolang/eodesignpatterns/tree/main/tex).
 The following design patterns are implemented:
 - [Abstract Fabric](https://github.com/HSE-Eolang/eodesignpatterns/blob/main/eo/AbstractFabric.eo)
 - [Adapter](https://github.com/HSE-Eolang/eodesignpatterns/blob/main/eo/Adapter.eo)
