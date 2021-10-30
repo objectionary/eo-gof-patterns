@@ -1,10 +1,9 @@
 # EO Design Patterns
 
 ## Introduction
-The activity of finding the right design pattern is one of the most difficult task in software development and developers, who have eagerly adopted design patterns over the past years, needed to understand not only the various design patterns available but the software systems as well and then be able to maintain these software systems, even in cases where documentation and/or design models are missing or of a poor quality. In most cases only the source code as the basic form of documentation is available.
-## Goal and Motivation
-To analyse design patterns by implementing some popular design patterns in EO. This is to help better assess the EO programming language and suggest alternatives of design patterns in EO that could replace such patterns which are not supported in the language.
-This repository contains descriptions and EO implementation of some popular software design patterns.
+The activity of finding the right design pattern is one of the most difficult task in software development and developers, who have eagerly adopted design patterns over the past years, needed to understand not only the various design patterns available, but the software systems as well and then be able to maintain these software systems, even in cases where documentation and/or design models are missing or of poor quality. In most cases only the source code as the basic form of documentation is available.
+### Goal and Motivation
+This repository contains implementation of some popular software design patterns in the EO programming language. These patterns were implemented with the goal of analyzing design patterns in the context of C++ and Java with the intention to help better assess the EO programming language and suggest alternatives of design patterns in EO that could replace such patterns which are not supported in the language.
 
 ## Implemented patterns
 Description of the design patterns analysis is available [here](https://github.com/HSE-Eolang/eodesignpatterns/tree/main/tex).
