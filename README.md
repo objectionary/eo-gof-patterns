@@ -27,13 +27,13 @@ _mvn compile_
 
 For linux systems:
 
-_./run.sh <name-of-pattern>_ 
+_./run.sh name-of-pattern_ 
 
 For Windows systems:
 
-_run.cmd <name-of-pattern>_
+_run.cmd name-of-pattern_
 
-NB: <name-of-pattern> as specified in the code.
+NB: name-of-pattern as specified in the code.
 
 ## Conclusion
 It is possible to conclude that (1) EO is principally applicable to all the considered patterns; (2) For some patterns, EO is able to give a fairly concise and intuitively clear code, since the language combines the features of Functional Programming and OOP.
