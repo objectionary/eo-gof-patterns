@@ -20,6 +20,7 @@ The following design patterns are implemented:
 
 ## To run:
 You can include these patterns in the eo compiler sandbox folder and run with the following commands:
+
 NB: You will need to have the HSE eo compiler installed (built and installed on your computer).
 
 _mvn compile_
@@ -31,6 +32,8 @@ _./run.sh <name-of-pattern>_
 For Windows systems:
 
 _run.cmd <name-of-pattern>_
+
+NB: <name-of-pattern> as specified in the code.
 
 ## Conclusion
 It is possible to conclude that (1) EO is principally applicable to all the considered patterns; (2) For some patterns, EO is able to give a fairly concise and intuitively clear code, since the language combines the features of Functional Programming and OOP.
