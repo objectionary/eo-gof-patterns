@@ -18,15 +18,15 @@ which are not supported in the language.
 Description of the design patterns analysis is available [here](https://github.com/HSE-Eolang/eodesignpatterns/tree/tex).
 The following design patterns are implemented:
 
-- [Abstract Factory](/eo/AbstractFabric.eo)
-- [Adapter](/eo/Adapter.eo)
-- [Bridge](/eo/Bridge.eo)
-- [ChainOfResponsibility](/eo/ChainOfResponsibility.eo)
-- [Command](/eo/Command.eo)
-- [Composite](/eo/Composite.eo)
-- [Decorator](/eo/Decorator.eo)
-- [Mediator](/eo/Mediator.eo)
-- [Null object](/eo/NullObject.eo)
+- [Abstract Factory](/src/eo/AbstractFabric.eo)
+- [Adapter](/src/eo/Adapter.eo)
+- [Bridge](/src/eo/Bridge.eo)
+- [ChainOfResponsibility](/src/eo/ChainOfResponsibility.eo)
+- [Command](/src/eo/Command.eo)
+- [Composite](/src/eo/Composite.eo)
+- [Decorator](/src/eo/Decorator.eo)
+- [Mediator](/src/eo/Mediator.eo)
+- [Null object](/src/eo/NullObject.eo)
 
 ## How to Run?
 
