@@ -28,7 +28,7 @@ The following design patterns are implemented:
 - [Mediator](/eo/Mediator.eo)
 - [Null object](/eo/NullObject.eo)
 
-# How to Run?
+## How to Run?
 
 NB: You will need to have the HSE eo compiler installed (built and installed on your computer).
 
