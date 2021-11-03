@@ -1,45 +1,72 @@
-# EO Design Patterns
+<img src="https://www.yegor256.com/images/books/elegant-objects/cactus.svg" height="100px" />
 
-## Introduction
-The activity of finding the right design pattern is one of the most difficult task in software development and developers, who have eagerly adopted design patterns over the past years, needed to understand not only the various design patterns available, but the software systems as well and then be able to maintain these software systems, even in cases where documentation and/or design models are missing or of poor quality. In most cases only the source code as the basic form of documentation is available.
-### Goal and Motivation
-This repository contains implementation of some popular software design patterns in the EO programming language. These patterns were implemented with the goal of analyzing design patterns in the context of C++ and Java with the intention to help better assess the EO programming language and suggest alternatives of design patterns in EO that could replace such patterns which are not supported in the language.
+The activity of finding the right design pattern is one of the most difficult task 
+in software development and developers, who have eagerly adopted design patterns 
+over the past years, needed to understand not only the various design patterns 
+available, but the software systems as well and then be able to maintain these s
+oftware systems, even in cases where documentation and/or design models are 
+missing or of poor quality. In most cases only the source code as the basic 
+form of documentation is available.
 
-## Implemented patterns
+This repository contains implementation of some popular software design 
+patterns in the [EO](https://www.eolang.org) programming language. These patterns 
+were implemented with the goal of analyzing design patterns in the 
+context of C++ and Java with the intention to help better assess EO and suggest 
+alternatives of design patterns in EO that could replace such patterns 
+which are not supported in the language.
+
 Description of the design patterns analysis is available [here](https://github.com/HSE-Eolang/eodesignpatterns/tree/main/tex).
 The following design patterns are implemented:
-- [Abstract Factory](https://github.com/HSE-Eolang/eodesignpatterns/blob/main/eo/AbstractFabric.eo)
-- [Adapter](https://github.com/HSE-Eolang/eodesignpatterns/blob/main/eo/Adapter.eo)
-- [Bridge](https://github.com/HSE-Eolang/eodesignpatterns/blob/main/eo/Bridge.eo)
-- [ChainOfResponsibility](https://github.com/HSE-Eolang/eodesignpatterns/blob/main/eo/ChainOfResponsibility.eo)
-- [Command](https://github.com/HSE-Eolang/eodesignpatterns/blob/main/eo/Command.eo)
-- [Composite](https://github.com/HSE-Eolang/eodesignpatterns/blob/main/eo/Composite.eo)
-- [Decorator](https://github.com/HSE-Eolang/eodesignpatterns/blob/main/eo/Decorator.eo)
-- [Mediator](https://github.com/HSE-Eolang/eodesignpatterns/blob/main/eo/Mediator.eo)
-- [Null object](https://github.com/HSE-Eolang/eodesignpatterns/blob/main/eo/NullObject.eo)
 
-## To run:
-You can include these patterns in the eo compiler sandbox folder and run with the following commands:
+- [Abstract Factory](/main/eo/AbstractFabric.eo)
+- [Adapter](/main/eo/Adapter.eo)
+- [Bridge](/main/eo/Bridge.eo)
+- [ChainOfResponsibility](/main/eo/ChainOfResponsibility.eo)
+- [Command](/main/eo/Command.eo)
+- [Composite](/main/eo/Composite.eo)
+- [Decorator](/main/eo/Decorator.eo)
+- [Mediator](/main/eo/Mediator.eo)
+- [Null object](/main/eo/NullObject.eo)
+
+# How to Run?
 
 NB: You will need to have the HSE eo compiler installed (built and installed on your computer).
 
-Step 1:
+You can include these patterns in EO compiler sandbox folder 
+and run with the following commands:
 
-_mvn compile_
+First, compile it:
 
-Step 2:
+```bash
+mvn compile
+```
 
-For linux systems:
+The, run:
 
-_./run.sh name-of-pattern_ 
+```
+./run.sh <name-of-pattern>
+```
 
-For Windows systems:
+The `<name-of-pattern>` must be as specified in the code.
 
-_run.cmd name-of-pattern_
+## Our Conclusion
 
-NB: name-of-pattern as specified in the code.
+It is possible to conclude that (1) EO is principally applicable 
+to all the considered patterns; (2) For some patterns, EO 
+is able to give a fairly concise and intuitively clear code, 
+since the language combines the features of Functional Programming and OOP.
 
-## Conclusion
-It is possible to conclude that (1) EO is principally applicable to all the considered patterns; (2) For some patterns, EO is able to give a fairly concise and intuitively clear code, since the language combines the features of Functional Programming and OOP.
+Also, EO has no local variables or any kind of stack-lifetime storage. Instead,
+any name refers to an object (stored in heap) that may be accessed through the
+scope of any other object via the dot-notation mechanism. Even anonymous objects
+may allow programmers to access its local scope (including parent and decoration
+hierarchies) freely. In addition, EO has no access modification instruments.
+This makes closures technique almost similar to the partial application
+mechanism. Moreover, the publicity of any attribute of any object makes
+encapsulation impossible in the language. This differentiates EO from functional
+programming languages and, also, from object-oriented languages. Absence of
+instruments of access modification (or simulation of it) may be a severe
+violation of object-oriented principle of encapsulation, which may lead to
+insecure environments breaking business logic of problem domains.
 
-Also, EO has no local variables or any kind of stack-lifetime storage. Instead, any name refers to an object (stored in heap) that may be accessed through the scope of any other object via the dot-notation mechanism. Even anonymous objects may allow programmers to access its local scope (including parent and decoration hierarchies) freely. In addition, EO has no access modification instruments. This makes closures technique almost similar to the partial application mechanism. Moreover, the publicity of any attribute of any object makes encapsulation impossible in the language. This differentiates EO from functional programming languages and, also, from object-oriented languages. Absence of instruments of access modification (or simulation of it) may be a severe violation of object-oriented principle of encapsulation, which may lead to insecure environments breaking business logic of problem domains.
+This analysis was made by a team of [HSE University](https://www.hse.ru/en/).
