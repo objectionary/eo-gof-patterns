@@ -15,18 +15,18 @@ context of C++ and Java with the intention to help better assess EO and suggest
 alternatives of design patterns in EO that could replace such patterns 
 which are not supported in the language.
 
-Description of the design patterns analysis is available [here](https://github.com/HSE-Eolang/eodesignpatterns/tree/main/tex).
+Description of the design patterns analysis is available [here](https://github.com/HSE-Eolang/eodesignpatterns/tree/tex).
 The following design patterns are implemented:
 
-- [Abstract Factory](/main/eo/AbstractFabric.eo)
-- [Adapter](/main/eo/Adapter.eo)
-- [Bridge](/main/eo/Bridge.eo)
-- [ChainOfResponsibility](/main/eo/ChainOfResponsibility.eo)
-- [Command](/main/eo/Command.eo)
-- [Composite](/main/eo/Composite.eo)
-- [Decorator](/main/eo/Decorator.eo)
-- [Mediator](/main/eo/Mediator.eo)
-- [Null object](/main/eo/NullObject.eo)
+- [Abstract Factory](/eo/AbstractFabric.eo)
+- [Adapter](/eo/Adapter.eo)
+- [Bridge](/eo/Bridge.eo)
+- [ChainOfResponsibility](/eo/ChainOfResponsibility.eo)
+- [Command](/eo/Command.eo)
+- [Composite](/eo/Composite.eo)
+- [Decorator](/eo/Decorator.eo)
+- [Mediator](/eo/Mediator.eo)
+- [Null object](/eo/NullObject.eo)
 
 # How to Run?
 
